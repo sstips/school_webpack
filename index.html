@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Academy</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="file:///H:/My Works/Shree/colors.css" rel="stylesheet" type="text/css">
+
+        <script>
+            /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+
+        </script> 
+            <!---Sticky side bar images--->
+        <script>
+          function myFunction() {
+          var x = document.getElementById("myIcon-bar");
+          if (x.className === "icon-bar") {
+            x.className += " responsive";
+          } else {
+          x.className = "icon-bar";
+            }
+          }
+        </script>
+
+
+        <!---Dropdown menu-->
+        <script>
+          /* When the user clicks on the button, 
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+
+</head>
+<body>
+     
+    <!---header-->
+
+        <div class="header">
+            <div class="box">
+                <img src="images/Shri Academy Logo.png" class="logo" height="100px" width="100px"></img>
+            </div>    
+                <div class="container">
+                    <h1>Shri Academy</h1>
+                    <h2>Center of Academic Excellence</h2>
+                </div>
+        </div>
+            
+              <div class="nav">
+                <a href="./index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="./news.html"><i class="fa fa-fw fa-search"></i>News</a>
+                <a href="./contact.html"><i class="fa fa-address-book-o"></i>Contact</a>
+                <a href="./about.html"><i class="fa fa-fw fa-user"></i>About</a>
+              </div>
+    
+    
+    <!---sidebar-->
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./vision.html"><i class="fa fa-fw fa-vision"></i>Vision</a>
+            <a href="./students.html">Students</a>
+            <a href="./calender.html">Calender</a>
+            <a href="./academic.html">Academic</a>
+        </div>
+    <!---background Image-->
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Click here</button>           
+        </div>
+
+        <!---Sticky Images-->
+
+        <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+          <a href="#" class="google"><i class="fa fa-google"></i></a> 
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>
+
+
+
+    <!---slide show images 1/3-->
+
+
+    <h2 style="text-align: center;line-height: 0.4;">News and Events</h2>
+    <p style="text-align:center; line-height: 0.4;">Upload your special Events photos here:</p>
+    
+    <div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Slide Show 1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/Slide Show 2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/Slide Show 3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+  <footer id="pageFooter" style="color: aqua;">
+    <p>©Copyright 2050 Powered by <img src="H:\My Works\Shree_Small_bc.jpg" height="25px" width="60px" >
+      All rights reversed.</p>
+  </footer>
+
+
+
+</body>
+</html>

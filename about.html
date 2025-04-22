@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Academy</title>
+
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+        <script>
+            /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+            function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            }
+
+        </script> 
+
+        <script>
+            function myFunction() {
+            var x = document.getElementById("myIcon-bar");
+            if (x.className === "icon-bar") {
+            x.className += " responsive";
+            } else {
+            x.className = "icon-bar";
+            }
+            }
+        </script>
+        
+</head>
+<body>
+     
+    <!---header-->
+
+        <div class="header">
+            <div class="box">
+                <img src="H:\My Works\Shree\Shri Academy\Shri Academy Logo.png" class="logo" height="100px" width="100px"></img>
+            </div>    
+                <div class="container">
+                    <h1>Shri Academy</h1>
+                    <h2>Center of Academic Excellence</h2>
+                </div>
+        </div>
+            
+            <div class="nav">
+                <a href="./index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+                <a href="./news.html"><i class="fa fa-fw fa-search"></i>News</a>
+                <a href="./contact.html"><i class="fa fa-address-book-o"></i>Contact</a>
+                <a href="#about"><i class="fa fa-fw fa-user"></i>About</a>
+            
+            </div>
+    
+    <!---sidebar-->
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="./vision.html"><i class="fa fa-fw fa-vision"></i>Vision</a>
+            <a href="./students.html">Students</a>
+            <a href="./calender.html">Calender</a>
+            <a href="./academic.html">Academic</a>
+        </div>
+    
+    <!---Sticky Images-->
+
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="#" class="google"><i class="fa fa-google"></i></a> 
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+        </div>
+
+
+    <!---background Image-->
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Click here</button>           
+        </div>
+
+ <h1 style="text-align: center;">This is About page</h1>
+
+        <div class="cards">
+            <article class="card">
+            <img src="images/college building.jpg" alt="Sample photo">
+            <div class="text">
+                <h3>Our Vision...</h3>
+                <p>Collaboratively administrate empowered markets via plug-and-play networks.</p>
+                <button>Here's why</button>
+            </div>
+            </article>
+            <article class="card">
+            <img src="images/college building.jpg" alt="Sample photo">
+            <div class="text">
+                <h3>Our Mission</h3>
+                <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+                <button>Here's how</button>
+            </div>
+            </article>
+        </div>    
+
+</body>
+</html>
